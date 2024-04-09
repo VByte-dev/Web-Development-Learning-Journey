@@ -1,0 +1,181 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    background-color: rgb(15, 15, 15);
+}
+
+#logo{
+    color: rgb(255, 217, 0);
+}
+
+/* Icons */
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    display: none;
+}
+.mIcon{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+#icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    transition: 1s ease 0s;
+}
+.home{
+    margin: 50px 60px 180px 60px;
+    
+    animation: oAnim 1s ease 0s;
+    animation-iteration-count: 1;
+}
+img{
+    border-radius: 3%;
+    height: 300px;
+    opacity: 70%;
+
+    
+    animation: oAnim 3s ease 0s;
+    animation-iteration-count: 1;
+    transition: 1s ease 0s;
+}
+.artists{
+    margin: 80px 50px 0% 30px;
+    animation: oAnim 3s ease 0s;
+    animation-iteration-count: 1;
+    transition: 1s ease 0s;
+}
+#artist{
+    margin: 60px 10%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#topic{
+    color: rgb(255, 217, 0);
+}
+p{
+    font-weight: 800;
+}
+.contact{
+    background-color: rgb(255, 217, 0);
+    height: 7%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.book{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+img:hover{
+    height: 350px;
+    opacity: 100%;
+}
+
+#icons:hover{
+    
+    color: rgb(255, 217, 0);
+}
+
+@keyframes oAnim {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@media (max-width:550px){
+    .nav{
+        margin-bottom: 60px;
+    }
+    #icons{
+        display: none;
+    }
+    .menu{
+        margin-top: 10px;
+        display: flex;
+        transition: 0.5s ease 0s;
+    }
+    .mIcon{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        margin-bottom: 100px;
+        
+        animation: oAnim 2s ease 0s;
+        animation-iteration-count: 1;
+    }
+    .menu:hover{
+        transform: translateY(-5px);
+        color: rgb(255, 217, 0);
+
+    }
+    .home{
+        margin: 50px 60px 10px 60px;
+    }
+    img{
+        margin-bottom: 30px;
+
+        transition: 1s ease 0s;
+
+
+    }
+    #artist{
+        margin: 60px 20%;
+        gap: 50px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+img:hover{
+    height: 350px;
+    opacity: 100%;
+}
+
+    @keyframes oAnim {
+        from{
+            opacity: 0%;
+        }
+        to{
+            opacity: 100%;
+        }
+    }
