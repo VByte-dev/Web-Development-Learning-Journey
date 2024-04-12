@@ -1,0 +1,338 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+
+    animation: intro 1s linear 0s;
+    animation-iteration-count: 1;
+}
+
+/* Navbar */
+a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+#navI{
+    display: flex;
+    gap: 50px;
+}
+.nav{
+    display: flex;
+    margin: 70px;
+    justify-content: space-between;
+}
+#navM{
+    display: flex;
+    justify-content: end;
+}
+
+/* Home */
+#heading{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 70px;
+
+    font-size: 150px;
+    font-family:"Noto Serif Display", serif;
+
+    display: flex;
+    justify-content: center;
+    color: orangered;
+}
+#line{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 2px;
+    background-color: orangered;
+    margin-bottom: 150px;
+    
+}
+#img{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 588PX;
+    margin-bottom: 200px;
+    border-radius: 10px;
+
+    transition: 0.2s linear 0s;
+}
+
+/* Shop */
+.shop{
+    margin-left: 10%;
+    margin-right: 15%;
+    display: flex;
+}
+#rightC{
+    margin-top: 100px;
+    height: 500px;
+    width: 650px;
+    background-color: rgb(31, 31, 31);
+    
+    border-radius: 10px;
+}
+#leftC{
+    padding-top: 150px;
+    padding-right: 300px;
+}
+#dButton{
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+    transition: 0.2s linear 0s;
+}
+h2{
+    font-family: "Noto Serif Display",serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+#arrow{
+
+    margin: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* About */
+.about{
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 200px;
+    
+
+    display: flex;
+    gap: 450px;
+}
+#img1 {
+    width: 300px;
+    transform: translate(20px);
+    border-radius: 10px;
+}
+#img2{
+    margin-top: 150px;
+    margin-left: -150px;
+    width: 300px;
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.3s linear 0s;
+}
+#leftA{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 400px;
+}
+
+/* Contact */
+.contact{
+    margin-top: 150px;
+    font-family: "Noto Serif Display", serif;
+    font-size: xx-large;
+    color: antiquewhite;
+    background-color: black;
+    padding: 90px;
+}
+#con{
+    display: flex;
+    justify-content: center;
+}
+#cIcon{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+/* Responsive */
+@media (max-width:450px){
+    /* Navbar */
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#navI{
+    display: flex;
+    gap: 30px;
+}
+.nav{
+    padding-left: 20px;
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+}
+#navM{
+    margin-left:20px;
+    display: flex;
+    justify-content: end;
+}
+#navM{
+    display: none;
+}  
+/* Home */
+#heading{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 70px;
+
+    font-size: 40px;
+    font-family:"Noto Serif Display", serif;
+
+    display: flex;
+    justify-content: center;
+    color: orangered;
+}
+#line{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 2px;
+    background-color: orangered;
+    margin-bottom: 20px;
+    
+}
+#img{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 130PX;
+    margin-bottom: 150px;
+    border-radius: 15px;
+
+}
+
+/* Shop */
+.shop{
+    display: block;
+    margin-top: -100px;
+}
+#leftC{
+    padding: 0%;
+}
+
+#rightC{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 60px;
+    height: 320px;
+    width: 200px;
+    background-color: rgb(31, 31, 31);
+
+    border-radius: 10px;
+}
+#dButton{
+    margin-top: 30px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+h2{
+    font-family: "Noto Serif Display",serif;
+    font-size: 30px;
+}
+#b{
+    display: flex;
+    justify-content: start;
+}
+#arrow{
+
+    margin: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* About */
+.about{
+    padding-top: 80px;
+    margin-top: 80px;
+
+    display: block;
+    gap: 450px;
+}
+#img1 {
+    width: 200px;
+    transform: translate(20px);
+}
+#img2{
+    margin-top: 100px;
+    margin-left: -150px;
+    width: 200px;
+    position: absolute;
+}
+#leftA{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 400px;
+}
+#rightA{
+    margin-top: -200px;
+}
+
+/* Contact */
+.contact{
+    margin-top: 150px;
+    font-family: "Noto Serif Display", serif;
+    font-size: large;
+    color: antiquewhite;
+    background-color: black;
+    padding: 90px;
+}
+#con{
+    display: flex;
+    justify-content: center;
+}
+#cIcon{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+}
+
+/* Animations and Others */
+#img:hover{
+    transform: translateY(-20px);
+    border-radius: 30px;
+}
+#dButton:hover{
+    transform: translateY(-10px);
+}
+
+#img2:hover{
+    transform: translateY(-30px);
+    border-radius: 10px;
+}
+
+@keyframes intro{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
