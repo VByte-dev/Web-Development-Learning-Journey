@@ -1,0 +1,167 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar */
+#logo{
+    color: rgb(0, 0, 0);
+
+    transition: 0.3s linear 0s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+#navI{
+    display: flex;
+    gap: 100px;
+}
+
+/* About */
+#c{
+    font-size: 60px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+img{
+    height: 300px;
+    border-radius: 20px;
+    transition: 0.2s linear 0s;
+    opacity: 95%;
+}
+button{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    border: none;
+    background-color: rgb(255, 213, 0);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: 0s linear 0s;
+}
+#icon1{
+    height: 45px;
+}
+#icon{
+    height: 40px;
+}
+#aI{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+/* IPhone SE */
+@media (max-width:450px){
+    /* Navbar */
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    padding: 30px;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+#navI{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* About */
+#c{
+    font-size: 40px;
+    position: absolute;
+    left: 40px;
+    top: 550px;
+
+}
+.about{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+#i{
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+img{
+    height: 300px;
+    border-radius: 20px;
+    
+}
+button{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    border: none;
+    background-color: rgb(255, 213, 0);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+#icon1{
+    height: 35px;
+}
+#icon{
+    height: 30px;
+}
+#aI{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+/* Animations and Others */
+#logo:hover{
+    color: rgb(255, 213, 0)
+}
+button:active{
+    background-color: black;
+    color: rgb(255, 213, 0);
+}
+img:hover{
+    transform: translateY(-10px);
+    opacity: 100%;
+}
